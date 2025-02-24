@@ -114,15 +114,55 @@ import math
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
-nome = input("Insira seu nome: ")
-sobrenome = input("Insira seu sobrenome: ")
+# nome = input("Insira seu nome: ")
+# sobrenome = input("Insira seu sobrenome: ")
 
-nome_completo = nome + " " + sobrenome
-print(nome_completo)
+# nome_completo = nome + " " + sobrenome
+# print(nome_completo)
 
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+
+# Validação da idade
+while True:
+    try:
+        idade_str = input("Insira sua idade: ")
+        idade = int(idade_str)
+        
+        # Verificar se é um número inteiro positivo razoável
+        if idade < 0 or idade > 120:
+            print("Por favor, digite uma idade válida (entre 0 e 120).")
+            continue
+            
+        break  # Sai do loop se a conversão for bem-sucedida e o valor for válido
+    except ValueError:
+        # Verifica se foi um número decimal (com ponto)
+        if "." in idade_str:
+            print("Erro: Por favor, digite apenas números inteiros.")
+        else:
+            print("Erro: Por favor, digite apenas números para a idade.")
+
+# Verificação de idade para dirigir
+if idade >= 18:
+    # Validação da CNH
+    while True:
+        possui_cnh = input("Você possui CNH? (S/N): ").upper()
+        if possui_cnh == "S" or possui_cnh == "N":
+            break
+        else:
+            print("Entrada inválida. Digite S para Sim ou N para Não.")
+    
+    # Verificação da CNH
+    if possui_cnh == "S":
+        print("Você é maior de idade e possui CNH. Pode dirigir.")
+    else:  # possui_cnh == "N"
+        print("Você é maior de idade, mas não possui CNH. Não pode dirigir.")
+        
+else:
+    print("Você é menor de idade. Não pode dirigir.")
+
+
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
