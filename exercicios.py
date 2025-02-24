@@ -96,10 +96,10 @@ import math
 # print(frase_sem_espacos)
 # print(len(frase_sem_espacos))
 
-frase = input("Insira uma frase: ")
-frase_sem_espaco = frase.replace(" ", "")
-print(frase_sem_espaco)
-print(len(frase_sem_espaco))
+# frase = input("Insira uma frase: ")
+# frase_sem_espaco = frase.replace(" ", "")
+# print(frase_sem_espaco)
+# print(len(frase_sem_espaco))
 
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
 
@@ -113,6 +113,12 @@ print(len(frase_sem_espaco))
 # print(f"Ano: {ano}")
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+
+nome = input("Insira seu nome: ")
+sobrenome = input("Insira seu sobrenome: ")
+
+nome_completo = nome + " " + sobrenome
+print(nome_completo)
 
 # #### Booleanos (`bool`)
 
