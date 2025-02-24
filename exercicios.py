@@ -4,12 +4,17 @@ import math
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
 
-numero_01 = int(input("Insira um número inteiro: "))
-numero_02 = int(input("Insira outro número inteiro: "))
-soma = numero_01 + numero_02
-print(soma)
+# numero_01 = int(input("Insira um número inteiro: "))
+# numero_02 = int(input("Insira outro número inteiro: "))
+# soma = numero_01 + numero_02
+# print(soma)
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
+
+numero = int(input("Insira um número inteiro: "))
+resto = numero % 5
+print(resto)
+
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 
