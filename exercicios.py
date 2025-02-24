@@ -165,39 +165,68 @@ import math
 
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
 
-print("Sistema de Alarme Residencial")
-print("-----------------------------")
-print("Responda com 1 (Sim) ou 0 (Não)")
+# print("Sistema de Alarme Residencial")
+# print("-----------------------------")
+# print("Responda com 1 (Sim) ou 0 (Não)")
 
-# Função para obter entrada válida
-def obter_entrada_valida(mensagem):
+# # Função para obter entrada válida
+# def obter_entrada_valida(mensagem):
+#     while True:
+#         try:
+#             valor = int(input(mensagem))
+#             if valor not in [0, 1]:
+#                 print("Erro: Por favor, digite apenas 0 (Não) ou 1 (Sim).")
+#                 continue
+#             return valor
+#         except ValueError:
+#             print("Erro: Digite apenas números (0 ou 1).")
+
+# # Perguntas sobre os sensores com validação
+# sensor_porta = obter_entrada_valida("O sensor da porta detectou movimento? ")
+# sensor_janela = obter_entrada_valida("O sensor da janela detectou movimento? ")
+
+# # Calcula se o alarme deve disparar (usando OR)
+# alarme_disparado = sensor_porta or sensor_janela
+
+# # Mostra o resultado
+# if alarme_disparado:
+#     print("\nALARME DISPARADO! 🚨")
+#     print("Um dos sensores detectou movimento!")
+# else:
+#     print("\nCasa segura ✓")
+#     print("Nenhum dos sensores detectou movimento.")
+
+# 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+
+print("Programa para inverter valor booleano")
+print("------------------------------------")
+print("Digite 1 para Verdadeiro ou 0 para Falso")
+
+# Função para obter uma entrada booleana válida
+def obter_valor_booleano():
     while True:
         try:
-            valor = int(input(mensagem))
+            valor = int(input("Digite o valor (0 ou 1): "))
             if valor not in [0, 1]:
-                print("Erro: Por favor, digite apenas 0 (Não) ou 1 (Sim).")
+                print("Erro: Por favor, digite apenas 0 ou 1.")
                 continue
             return valor
         except ValueError:
             print("Erro: Digite apenas números (0 ou 1).")
 
-# Perguntas sobre os sensores com validação
-sensor_porta = obter_entrada_valida("O sensor da porta detectou movimento? ")
-sensor_janela = obter_entrada_valida("O sensor da janela detectou movimento? ")
+# Obtém o valor booleano do usuário
+valor_original = obter_valor_booleano()
 
-# Calcula se o alarme deve disparar (usando OR)
-alarme_disparado = sensor_porta or sensor_janela
+# Inverte o valor usando o operador not
+valor_invertido = not valor_original
 
-# Mostra o resultado
-if alarme_disparado:
-    print("\nALARME DISPARADO! 🚨")
-    print("Um dos sensores detectou movimento!")
-else:
-    print("\nCasa segura ✓")
-    print("Nenhum dos sensores detectou movimento.")
+# Exibe os resultados
+print("\nResultados:")
+print(f"Valor original: {valor_original} ({'Verdadeiro' if valor_original else 'Falso'})")
+print(f"Valor invertido: {int(valor_invertido)} ({'Verdadeiro' if valor_invertido else 'Falso'})")
+print(f"\nA operação NOT {valor_original} = {int(valor_invertido)}")
 
 
-# 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
