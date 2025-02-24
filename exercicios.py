@@ -198,36 +198,44 @@ import math
 
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 
-print("Programa para inverter valor booleano")
-print("------------------------------------")
-print("Digite 1 para Verdadeiro ou 0 para Falso")
+# print("Programa para inverter valor booleano")
+# print("------------------------------------")
+# print("Digite 1 para Verdadeiro ou 0 para Falso")
 
-# Função para obter uma entrada booleana válida
-def obter_valor_booleano():
-    while True:
-        try:
-            valor = int(input("Digite o valor (0 ou 1): "))
-            if valor not in [0, 1]:
-                print("Erro: Por favor, digite apenas 0 ou 1.")
-                continue
-            return valor
-        except ValueError:
-            print("Erro: Digite apenas números (0 ou 1).")
+# # Função para obter uma entrada booleana válida
+# def obter_valor_booleano():
+#     while True:
+#         try:
+#             valor = int(input("Digite o valor (0 ou 1): "))
+#             if valor not in [0, 1]:
+#                 print("Erro: Por favor, digite apenas 0 ou 1.")
+#                 continue
+#             return valor
+#         except ValueError:
+#             print("Erro: Digite apenas números (0 ou 1).")
 
-# Obtém o valor booleano do usuário
-valor_original = obter_valor_booleano()
+# # Obtém o valor booleano do usuário
+# valor_original = obter_valor_booleano()
 
-# Inverte o valor usando o operador not
-valor_invertido = not valor_original
+# # Inverte o valor usando o operador not
+# valor_invertido = not valor_original
 
-# Exibe os resultados
-print("\nResultados:")
-print(f"Valor original: {valor_original} ({'Verdadeiro' if valor_original else 'Falso'})")
-print(f"Valor invertido: {int(valor_invertido)} ({'Verdadeiro' if valor_invertido else 'Falso'})")
-print(f"\nA operação NOT {valor_original} = {int(valor_invertido)}")
-
+# # Exibe os resultados
+# print("\nResultados:")
+# print(f"Valor original: {valor_original} ({'Verdadeiro' if valor_original else 'Falso'})")
+# print(f"Valor invertido: {int(valor_invertido)} ({'Verdadeiro' if valor_invertido else 'Falso'})")
+# print(f"\nA operação NOT {valor_original} = {int(valor_invertido)}")
 
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+
+numero_01 = int(input("Insira um número inteiro: "))
+numero_02 = int(input("Insira outro número inteiro: "))
+
+if numero_01 == numero_02:
+    print("Os números são iguais.")
+else:
+    print("Os números são diferentes.")
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
 # #### try-except e if
