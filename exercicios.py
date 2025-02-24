@@ -24,11 +24,11 @@ import math
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
-raio_do_circulo = float(input("Insira o raio do círculo: "))
-area_do_circulo = math.pi * (raio_do_circulo ** 2)
-area_do_circulo = round(area_do_circulo, 2)
+# raio_do_circulo = float(input("Insira o raio do círculo: "))
+# area_do_circulo = math.pi * (raio_do_circulo ** 2)
+# area_do_circulo = round(area_do_circulo, 2)
 
-print(area_do_circulo)
+# print(area_do_circulo)
 
 # #### Strings (`str`)
 
@@ -36,6 +36,16 @@ print(area_do_circulo)
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+
+data_do_usuario = input("Insira uma data no formato 'dd/mm/aaaa': ")
+
+data_do_usuario.split("/")
+dia, mes, ano = data_do_usuario.split("/")
+
+print(f"Dia: {dia}")
+print(f"Mês: {mes}")
+print(f"Ano: {ano}")
+
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
 # #### Booleanos (`bool`)
