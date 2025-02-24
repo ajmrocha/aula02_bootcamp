@@ -228,15 +228,23 @@ import math
 
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 
-numero_01 = int(input("Insira um número inteiro: "))
-numero_02 = int(input("Insira outro número inteiro: "))
+# numero_01 = int(input("Insira um número inteiro: "))
+# numero_02 = int(input("Insira outro número inteiro: "))
 
-if numero_01 == numero_02:
-    print("Os números são iguais.")
-else:
-    print("Os números são diferentes.")
+# if numero_01 == numero_02:
+#     print("Os números são iguais.")
+# else:
+#     print("Os números são diferentes.")
 
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+
+# numero_01 = int(input("Insira um número inteiro: "))
+# numero_02 = int(input("Insira outro número inteiro: "))
+
+# if numero_01 == numero_02:
+#     print("Os números são iguais.")
+# else:
+#     print("Os números são diferentes.")
 
 # #### try-except e if
 
