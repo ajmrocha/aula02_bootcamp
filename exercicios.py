@@ -310,16 +310,26 @@ import math
 
 # 24: Classificador de Números
 
-numero_01 = float(input("Insira o primeiro número: "))
-numero_02 = float(input("Insira o segundo número: "))
+# numero_01 = float(input("Insira o primeiro número: "))
+# numero_02 = float(input("Insira o segundo número: "))
 
-if numero_01 > numero_02:
-    print(f"{numero_01} é maior que {numero_02}.")
-elif numero_02 > numero_01:
-    print(f"{numero_02} é maior que {numero_01}.")
+# if numero_01 > numero_02:
+#     print(f"{numero_01} é maior que {numero_02}.")
+# elif numero_02 > numero_01:
+#     print(f"{numero_02} é maior que {numero_01}.")
 
 
 # 25: Conversão de Tipo com Validação
+
+numero = input("Insira um número inteiro: ")
+
+try:
+    numero = int(numero)
+    print("Número convertido com sucesso!")
+except ValueError:
+    print("Erro: Por favor, insira apenas números inteiros.")
+    
+    
 
 
 
