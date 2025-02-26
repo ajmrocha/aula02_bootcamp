@@ -250,25 +250,33 @@ import math
 
 # 21: Conversor de Temperatura
 
-Temperatura = float(input("Insira a temperatura que deseja converter: "))
+# Temperatura = float(input("Insira a temperatura que deseja converter: "))
 
-print("Escolha a opção de conversão:")
-print("1. Celsius para Fahrenheit")
-print("2. Fahrenheit para Celsius")
+# print("Escolha a opção de conversão:")
+# print("1. Celsius para Fahrenheit")
+# print("2. Fahrenheit para Celsius")
 
-opcao = int(input("Opção: "))
-if opcao == 1:
-    temperatura_fahrenheit = (Temperatura * 9/5) + 32
-    print(f"{Temperatura}°C equivale a {temperatura_fahrenheit}°F.")
-elif opcao == 2:
-    temperatura_celsius = (Temperatura - 32) * 5/9
-    print(f"{Temperatura}°F equivale a {temperatura_celsius}°C.")
-else:
-    print("Opção inválida. Por favor, escolha 1 ou 2.")
+# opcao = int(input("Opção: "))
+# if opcao == 1:
+#     temperatura_fahrenheit = (Temperatura * 9/5) + 32
+#     print(f"{Temperatura}°C equivale a {temperatura_fahrenheit}°F.")
+# elif opcao == 2:
+#     temperatura_celsius = (Temperatura - 32) * 5/9
+#     print(f"{Temperatura}°F equivale a {temperatura_celsius}°C.")
+# else:
+#     print("Opção inválida. Por favor, escolha 1 ou 2.")
     
-    
-
 # 22: Verificador de Palíndromo
+
+verificador = input("Insira uma palavra ou frase para verificar se é um palíndromo: ")
+
+verificador = verificador.lower().replace(" ", "")
+
+if verificador == verificador[::-1]:
+    print("É um palíndromo.")
+else:
+    print("Não é um palíndromo.")
+
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
