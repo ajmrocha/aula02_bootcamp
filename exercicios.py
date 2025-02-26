@@ -268,16 +268,46 @@ import math
     
 # 22: Verificador de Palíndromo
 
-verificador = input("Insira uma palavra ou frase para verificar se é um palíndromo: ")
+# verificador = input("Insira uma palavra ou frase para verificar se é um palíndromo: ")
 
-verificador = verificador.lower().replace(" ", "")
+# verificador = verificador.lower().replace(" ", "")
 
-if verificador == verificador[::-1]:
-    print("É um palíndromo.")
-else:
-    print("Não é um palíndromo.")
+# if verificador == verificador[::-1]:
+#     print("É um palíndromo.")
+# else:
+#     print("Não é um palíndromo.")
 
 # 23: Calculadora Simples
+
+escolha = input("Escolha a operação desejada: \n1. Adição\n2. Subtração\n3. Multiplicação\n4. Divisão\n")
+
+try:
+    escolha = int(escolha)
+except ValueError:
+    print("Escolha inválida. Por favor, digite um número de 1 a 4.")
+    exit()
+    
+numero_01 = float(input("Insira o primeiro número: "))
+numero_02 = float(input("Insira o segundo número: "))
+
+if escolha == 1:
+    resultado = numero_01 + numero_02
+    print(f"Resultado: {resultado}")
+elif escolha == 2:
+    resultado = numero_01 - numero_02
+    print(f"Resultado: {resultado}")
+elif escolha == 3:
+    resultado = numero_01 * numero_02
+    print(f"Resultado: {resultado}")
+elif escolha == 4:
+    if numero_02 == 0:
+        print("Erro: Divisão por zero.")
+    else:
+        resultado = numero_01 / numero_02
+        print(f"Resultado: {resultado}")
+else:
+    print("Escolha inválida. Por favor, digite um número de 1 a 4.")
+
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
 
