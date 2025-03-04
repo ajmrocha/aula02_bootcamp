@@ -321,13 +321,13 @@ import math
 
 # 25: Conversão de Tipo com Validação
 
-numero = input("Insira um número inteiro: ")
+# numero = input("Insira um número inteiro: ")
 
-try:
-    numero = int(numero)
-    print("Número convertido com sucesso!")
-except ValueError:
-    print("Erro: Por favor, insira apenas números inteiros.")
+# try:
+#     numero = int(numero)
+#     print("Número convertido com sucesso!")
+# except ValueError:
+#     print("Erro: Por favor, insira apenas números inteiros.")
     
     
 
